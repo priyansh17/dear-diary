@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.UserInterests"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#724EB2"
+            android:text="@string/starsRecommendation"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginTop="50dp"
+        android:background="#6151FB"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/faqs"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.6"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/colorPrimary"
+                android:padding="2dp"
+                android:shadowColor="#000000"
+                android:shadowDx="1.5"
+                android:shadowDy="1.3"
+                android:shadowRadius="1.6"
+                android:text="Dance"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="29sp" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:textAlignment="center"
+                android:id="@+id/danceRating"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginTop="50dp"
+            android:background="#6151FB"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/faqs"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="2dp"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.5"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="1.6"
+                    android:text="StandUp"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="29sp" />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:stepSize="0.5"
+                    android:textAlignment="center"
+                    android:id="@+id/standupRating"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginTop="50dp"
+            android:background="#6151FB"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/faqs"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="2dp"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.5"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="1.6"
+                    android:text="vLog"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="29sp" />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:stepSize="0.5"
+                    android:textAlignment="center"
+                    android:id="@+id/vLogsRating"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginTop="50dp"
+            android:background="#6151FB"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/faqs"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="2dp"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.5"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="1.6"
+                    android:text="Music"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="29sp" />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:stepSize="0.5"
+                    android:textAlignment="center"
+                    android:id="@+id/musicRating"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginTop="50dp"
+            android:background="#6151FB"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/faqs"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="2dp"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.5"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="1.6"
+                    android:text="Mind Puzzles"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="29sp" />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:stepSize="0.5"
+                    android:textAlignment="center"
+                    android:id="@+id/puzzlesRating"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginTop="50dp"
+            android:background="#6151FB"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/faqs"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="2dp"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.5"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="1.6"
+                    android:text="Story Books"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="29sp" />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:stepSize="0.5"
+                    android:textAlignment="center"
+                    android:id="@+id/storyBooksRating"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginTop="50dp"
+            android:background="#6151FB"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            tools:ignore="UselessParent">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/faqs"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="2dp"
+                    android:shadowColor="#000000"
+                    android:shadowDx="1.5"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="1.6"
+                    android:text="Biographies"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="29sp" />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:stepSize="0.5"
+                    android:textAlignment="center"
+                    android:id="@+id/biographiesRating"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginTop="50dp"
+        android:background="#6151FB"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/faqs"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.6"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/colorPrimary"
+                android:padding="2dp"
+                android:shadowColor="#000000"
+                android:shadowDx="1.5"
+                android:shadowDy="1.3"
+                android:shadowRadius="1.6"
+                android:text="Songs"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="29sp" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:textAlignment="center"
+                android:id="@+id/SongsRating"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginTop="50dp"
+        android:background="#6151FB"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/faqs"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.6"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/colorPrimary"
+                android:padding="2dp"
+                android:shadowColor="#000000"
+                android:shadowDx="1.5"
+                android:shadowDy="1.3"
+                android:shadowRadius="1.6"
+                android:text="Short Stories"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="29sp" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:textAlignment="center"
+                android:id="@+id/shortStoriesRating"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonToSubmitStars"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Submit"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</ScrollView>

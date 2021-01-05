@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SplashScreenActivity"
+    android:background="@color/colorPrimary">
+
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Dear Diary"
+        android:textColor="#ffffff"
+        android:textSize="50sp"
+        android:textStyle="italic"
+        android:layout_below="@id/icon"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="237dp"
+        android:layout_height="252dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/brainapp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Your Mental Health Supervisor"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_below="@id/heading"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>

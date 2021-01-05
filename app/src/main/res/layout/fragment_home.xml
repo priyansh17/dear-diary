@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment"
+    android:id="@+id/container"
+    android:background="#fff">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_marginTop="50dp"
+                android:background="#07EEF7"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4">
+
+                    <ImageView
+                        android:id="@+id/ImgForDiaryEntry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/brainapp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4.6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewDiaryName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_marginStart="10dp"
+                        android:background="#52F8ED"
+                        android:padding="2dp"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="@string/txtNewDiaryEntry"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textViewDiaryEntry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:width="300dp"
+                        android:background="#ffffff"
+                        android:padding="5dp"
+                        android:text="@string/txtInfoDiary"
+                        android:textAlignment="center"
+                        android:textColor="#272929"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/buttonToDiaryEntry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="Add"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_marginTop="50dp"
+                android:background="#F9F811"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/talktouser"
+
+                        />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4.6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewQuestion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_marginStart="10dp"
+                        android:background="#F3F695"
+                        android:padding="2dp"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="@string/txtSuggestions"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/editTextDiaryEntry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:width="300dp"
+                        android:height="100dp"
+                        android:background="#fff"
+                        android:hint="@string/cheerUp"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/buttonToInstantRecommendation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="Submit"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_marginTop="50dp"
+                android:background="#27F909"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/faqs" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4.6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textFillFAQ"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_marginStart="10dp"
+                        android:background="#6BF258"
+                        android:padding="2dp"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:text="Would like to fill/Re-Fill the personal Assesment form?"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/hintForFAQText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:width="300dp"
+                        android:background="#ffffff"
+                        android:padding="5dp"
+                        android:text="Feeling some new changes within you? Share with us"
+                        android:textAlignment="center"
+                        android:textColor="#272929"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/buttonToFAQ"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="Fill"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#724EB2"
+                android:text="@string/helpFreshenUp"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="900dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,97 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.chaquo.python'
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+    //for python
+    flavorDimensions "abi"
+    productFlavors {
+        arm {
+            dimension "abi"
+            ndk { abiFilters "armeabi-v7a" }
+        }
+        x86 {
+            dimension "abi"
+            ndk { abiFilters "x86" }
+        }
+    }
+    //till here
+    defaultConfig {
+        applicationId "com.priyansh.brainrelief"
+
+
+        sourceSets {
+            main {
+                python {
+                    srcDirs = ["src/main/python"]
+                }
+
+            }
+        }
+
+
+        minSdkVersion 18
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            abiFilters "armeabi-v7a", "x86"
+        }
+
+        python {
+            pip {
+                install "nltk"
+                install "textblob"
+                install "bs4"
+                install "requests"
+                install "lxml"
+            }
+            buildPython "C:/Users/KIIT/AppData/Local/Programs/Python/Python38/python.exe"
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+
+    implementation platform('com.google.firebase:firebase-bom:26.2.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    //noinspection GradleDependency
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-database:19.6.0'
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.firebase:firebase-database-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-storage-ktx'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+
+
+
+}

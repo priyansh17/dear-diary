@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.EditDiaryActivity">
+
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine2"
+        android:hint="Enter Your Personal Diary here.\n\nTell us how your day was?"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTextMultiLine2"
+        android:id="@+id/btnTosaveDiary"
+        android:text="Save  Diary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/btnTosaveDiary"
+        android:layout_marginTop="-2dp"
+        android:src="@drawable/diary" />
+</RelativeLayout>

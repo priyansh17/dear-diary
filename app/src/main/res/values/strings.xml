@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Brain Relief</string>
+    <string name="app_tagline">Let US do the Thinking!</string>
+    <string name="app_heading">Brain Relief</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="signuptext">Don\'t have an account? Sign Up Now</string>
+    <string name="log_in">Log In</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="register">Register Now</string>
+    <string name="reset_password">Enter your email id to get an OTP to reset your password.</string>
+    <string name="open">open drawer</string>
+    <string name="close">close drawer</string>
+    <string name="shared_preferences">Shared Preferences</string>
+    <string name="welcomeTxt">Welcome To Your Diary</string>
+    <string name="txtNewDiaryEntry">Would you like to make a new diary entry?!</string>
+    <string name="txtInfoDiary">Tell us how was your day today?</string>
+    <string name="cheerUp">Want to cheer yourself up?\nEnter your answer here</string>
+    <string name="txtSuggestions">Want some Suggestions?\n\nDescribe your current state of mind in few words:</string>
+    <string name="fill_form">Would like to Fill/Re-Fill the personal Assesment form?</string>
+    <string name="recommendText">These are some movies recommended for you. Would you like to watch?</string>
+    <string name="helpFreshenUp">We have something to help you freshen up and Relax</string>
+    <string name="starsRecommendation">Please Let us know your reviews on the following Aspects.\nRate them according to your Liking.</string>
+</resources>
