@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,47 +9,52 @@
     android:id="@+id/ListOfDates"
     android:background="@color/colorAccent">
 
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:id="@+id/txtView"
-        android:layout_height="wrap_content"
-        android:text="Please chose a date to make a Diary Entry"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textColor="@color/colorPrimary"
-        android:background="@color/cardview_light_background"
-        tools:ignore="PrivateResource" />
+        android:layout_height="wrap_content">
 
-    <CalendarView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txtView"
-        android:id="@+id/calendar"
-        />
+        <TextView
+            android:id="@+id/txtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cardview_light_background"
+            android:text="Please chose a date to make a Diary Entry"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="PrivateResource" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_below="@+id/calendar"
-        android:layout_marginTop="-2dp"
-        android:src="@drawable/diary" />
+        <CalendarView
+            android:id="@+id/calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtView" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="50dp"
-        android:drawableEnd="@mipmap/dear_diary_launcher_round"
-        android:text="Proceed to Diary Entry"
-        android:textSize="24sp"
-        android:background="@color/colorPrimary"
-        android:textColor="#ffffff"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        android:id="@+id/btnToDiary"/>
+        <ImageView
+            android:id="@+id/picofdiary"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/calendar"
+            android:layout_marginTop="-2dp"
+            android:src="@drawable/diary" />
 
+        <Button
+            android:id="@+id/btnToDiary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/picofdiary"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@color/colorPrimary"
+            android:drawableEnd="@mipmap/dear_diary_launcher_round"
+            android:text="Proceed to Diary Entry"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
 
+    </RelativeLayout>
 
-</RelativeLayout>
+</ScrollView>

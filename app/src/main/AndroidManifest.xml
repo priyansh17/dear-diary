@@ -15,8 +15,7 @@
         android:roundIcon="@mipmap/dear_diary_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.EditDiaryActivity"></activity>
-        <activity android:name=".activity.NoteEditorActivity" />
+        <activity android:name=".activity.EditDiaryActivity" />
         <activity android:name=".activity.DiaryEntryActivity" />
         <activity android:name=".activity.UserInterests" />
         <activity android:name=".activity.InstantFeedbackActivity" />
