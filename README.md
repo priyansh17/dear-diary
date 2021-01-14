@@ -1,4 +1,9 @@
 # BrainRelief / Dear- Diary ( Your Mental Health Supervisor )
+Co-Developers:
+Arya (arya1382000@gmail.com)
+Ashutosh Behera (ashubehera78@gmail.com)
+Tamali Kundu (tamali2807@gmail.com)
+
 The App aims at helping people to fight from depression and communicate with them at a 1-1 basis alongside giving them suggestions based on 
 their choices which will be taken from the user in various formats such as MCQ for a one time basis and Diary entries of user on a daily basis. 
 The app aims to help mainly people who are introvert and don't share their emotions easily with others who are depressed.
