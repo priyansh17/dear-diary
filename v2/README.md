@@ -1,6 +1,7 @@
 # 📖 Dear Diary — v2
 
-> **Your personal mental-health companion** — a modern cross-platform mobile app that lets you journal your thoughts, analyse your mood with built-in sentiment analysis, and receive tailored YouTube recommendations to help you feel better.
+> **Your personal mental-health companion** — a modern cross-platform mobile app that lets you journal your thoughts, analyse your mood with built-in sentiment analysis, and receive tailored YouTube recommendations to help you feel better.  
+> Looking for the full architecture overview (new vs old Kotlin) ? → [`ARCHITECTURE.md`](../ARCHITECTURE.md)
 
 [![Expo](https://img.shields.io/badge/Expo-55-blueviolet?logo=expo)](https://expo.dev)
 [![React Native](https://img.shields.io/badge/React%20Native-0.83-blue?logo=react)](https://reactnative.dev)

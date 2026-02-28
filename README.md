@@ -1,6 +1,7 @@
 # 📖 Dear Diary / BrainRelief — Your Mental Health Supervisor
 
-> **v2 is now available!** → See the [`v2/`](./v2/) directory for the complete redesign.
+> **v2 is now available!** → See the [`v2/`](./v2/) directory for the complete redesign.  
+> **Architecture overview** (new React Native vs old Kotlin) → [`ARCHITECTURE.md`](./ARCHITECTURE.md)
 
 https://play.google.com/store/apps/details?id=com.priyansh.brainrelief&hl=en_US&gl=US
 
